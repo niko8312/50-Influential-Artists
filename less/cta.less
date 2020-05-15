@@ -5,21 +5,30 @@
     text-align: center;
     padding: 20% 10%;
     margin: 4% 4%;
+
+    @media @mobile {
+        margin: 4% 0;
+    }
     
 
     h1 {
         font-size: 6vh;
         color: white;
-        font-family: @font;
         font-weight: bold;
+
+        @media @mobile {
+            font-size: 3.5vh;
+        }
     }
 
     button {
-        font-family: @font;
         margin: 2% 0;
         padding: 1.5% 5%;
-        font-size: 2rem;
-        border-radius: 6px;
         text-align: center;
+        .btnForm(2rem, 6px);
+
+        @media @mobile {
+            .btnForm(0.8rem, 4px);
+        }
     }
 }
